@@ -14,7 +14,7 @@ attr_accessor :name, :roster
   end
   nu_hash
 end
-  end
+  
 
 end
 
