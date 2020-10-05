@@ -6,8 +6,8 @@ attr_accessor :name, :roster
     @roster = {}
   end
 
-  def add_a_student(student, grade)
-    def sort
+  
+  def add_student
   nu_hash = {}
   roster.each do |x, y|
     nu_hash[x] = y.sort
