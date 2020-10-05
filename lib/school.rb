@@ -8,7 +8,7 @@ attr_accessor :name, :roster
 
   def add_a_student(student, grade)
     roster << student
-    
+
 end
 
 
