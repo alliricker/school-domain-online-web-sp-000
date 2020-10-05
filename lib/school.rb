@@ -6,14 +6,11 @@ attr_accessor :name, :roster
     @roster = {}
   end
 
-
-  def add_student(students, grades)
-  student_grades = {}
-  roster.map { |e|  } do |students, grades|
-    student_grades[student] = grades.sort
+  def add_student(name, grade)
+    roster[grade] || = []
+    roster[grade] << name
   end
-  student_grades
-end
+    
 
 
 end
