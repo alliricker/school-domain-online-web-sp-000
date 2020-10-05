@@ -10,7 +10,7 @@ attr_accessor :name, :roster
     roster[grade] || = []
     roster[grade] << name
   end
-    
+
 
 
 end
