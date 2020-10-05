@@ -12,7 +12,7 @@ attr_accessor :name, :roster
   end
 
 def grade(student_grade)
-  
+
 
 end
 
