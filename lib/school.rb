@@ -7,10 +7,10 @@ attr_accessor :name, :roster
   end
 
 
-  def add_student
+  def add_student(students, grades)
   student_grades = {}
-  roster.each do |x, y|
-    student_grades[x] = y.sort
+  roster.each do |students, grades|
+    student_grades[student] = grades.sort
   end
   student_grades
 end
