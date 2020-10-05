@@ -11,7 +11,13 @@ attr_accessor :name, :roster
     roster[student_grade] << name
   end
 
-def grade(student_grade)
+  def grade(student_grade)
+    roster.detect do |x, y|
+      if x == student_grade
+        return y 
+      end
+    end
+  end
 
 
 end
