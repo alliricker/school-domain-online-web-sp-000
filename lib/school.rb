@@ -8,11 +8,11 @@ attr_accessor :name, :roster
 
 
   def add_student
-  nu_hash = {}
+  student_grades = {}
   roster.each do |x, y|
-    nu_hash[x] = y.sort
+    student_grades[x] = y.sort
   end
-  nu_hash
+  student_grades
 end
 
 
