@@ -14,11 +14,18 @@ attr_accessor :name, :roster
   def grade(student_grade)
     roster.detect do |x, y|
       if x == student_grade
-        return y 
+        return y
       end
     end
   end
 
+   def sort
+     alpha_hash = {}
+     roster.each do |x, y|
+       alpha_hash[x] = y.sort
+     end
+     alpha_hash
+   end
 
 end
 
@@ -30,3 +37,4 @@ school.add_student("Kelly Kapowski", 10)
 school.add_student("Screech", 11)
 school.roster
 school.grade(9)
+school.sort
