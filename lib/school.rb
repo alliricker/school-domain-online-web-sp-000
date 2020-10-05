@@ -9,7 +9,7 @@ attr_accessor :name, :roster
 
   def add_student(students, grades)
   student_grades = {}
-  roster.each do |students, grades|
+  roster.map { |e|  } do |students, grades|
     student_grades[student] = grades.sort
   end
   student_grades
