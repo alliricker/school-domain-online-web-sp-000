@@ -6,9 +6,9 @@ attr_accessor :name, :roster
     @roster = {}
   end
 
-  def add_student(name, class)
-    roster[class] ||= []
-    roster[class] << name
+  def add_student(name, student_grade)
+    roster[student_grade] ||= []
+    roster[student_grade] << name
   end
 
 
