@@ -6,14 +6,14 @@ attr_accessor :name, :roster
     @roster = {}
   end
 
-  
+
   def add_student
   nu_hash = {}
   roster.each do |x, y|
     nu_hash[x] = y.sort
   end
   nu_hash
-end 
+end
   end
 
 end
